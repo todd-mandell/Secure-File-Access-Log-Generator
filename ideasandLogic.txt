@@ -1,5 +1,7 @@
 command prompt window, you pick the file you want to monitor for activity
-or somehow make this into a service if you compile 1 instance of it per file that should work
+it then gets the checksum of that file and confirms you got it right?
+
+--or somehow make this into a service if you compile 1 instance of it per file that should work
 
 it somehow monitors file access, netowrk access and wishfully the user name accessing the file
 
