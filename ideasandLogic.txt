@@ -1,0 +1,12 @@
+command prompt window, you pick the file you want to monitor for activity
+or somehow make this into a service if you compile 1 instance of it per file that should work
+
+it somehow monitors file access, netowrk access and wishfully the user name accessing the file
+
+every read or write or modify is timestamped and written to a text log and the next line of the log is a large CRC 
+like SHA256 checksum 
+of the entire file up to the checksum, so this way you cant fake a log entry without redoing every single file checksum
+
+this makes your file a hard target and a time consuming one to fake access log entries to, thus making detection an easier process
+and to make it impossible, maybe you could monitor the log file with another instance of this program, or just build that in? that's ridiculous.
+but would be officially ridiculously dificult to fake. 
